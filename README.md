@@ -25,7 +25,7 @@ In order for them to get assigned back to the group again, they either need to
 
 ## **Import Code** 
 
-LINK HERE
+[Streamer.bot Import](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/blob/main/youtube_member_auto_assign.sb)
 
 
 ## **Installation** 
