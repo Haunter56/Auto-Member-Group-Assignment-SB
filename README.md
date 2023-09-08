@@ -43,7 +43,7 @@ There should be 3 actions and 1 command.
 
 
 ### C# Compiler
-To make sure the C# code will run, go into any of the actions and  > Double-Click the "Execute Code" sub-action > click "compile" to make sure it compiles
+To make sure the C# code will run, go into any of the actions and  > Double-Click the `Execute Code` sub-action > click "Compile" to make sure it compiles
 
 
 ![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/cbbd08f8-2aaf-47d5-b6d7-7aa3ddf66a63)
@@ -54,13 +54,13 @@ To make sure the C# code will run, go into any of the actions and  > Double-Clic
 
 
 ### Your YouTube Member Level/Tier Names
-In the "New Member/Milestone/Gift Received Assign To Group" action update the member level/tier names with the names you set up on your channel. 
+In the `New Member/Milestone/Gift Received Assign To Group` action update the member level/tier names with the names you set up on your channel. 
 
 DO NOT DELETE THEM. Even if you don't have that many levels/tiers, you need to leave them in for the code to work.
 
 ![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/69f40f6e-3cf6-45c2-811d-3e5412f8c1cd)
 
-For example, if your level 1 member tier was "Level 1" you would update the text "[Level/Tier 1 Member Name Here]" to "Level 1"
+For example, if your level 1 member tier was `Level 1` you would update the text `[Level/Tier 1 Member Name Here]` to `Level 1`
 
 ![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/53714694-79da-4f06-bdbb-26ca9e27cdee)
 
@@ -90,6 +90,50 @@ OPTIONAL - You can change the group names to your member level/tier names, just 
 
 
 They must match the group names you create exactly. If you don't have up to 5 member levels/tiers, then just update the ones you have and leave the other ones as they are.
+
+
+## **Using the Command** 
+
+There is a command `!addmember` that you can use to manually add users to your member groups
+
+```diff
+- **Before activating the command, be sure to note or copy down the user ID**
+```
+
+After you activate the command through chat or any other trigger, you will be prompted to enter 3 pieces of data:
+
+### 1 - The user ID
+
+This can be found in the `Viewers` tab by clicking on a user and copying their ID:
+
+![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/36f5eaec-3aa6-4221-bb28-c3bad41a84e9)
+
+Then enter it into the window:
+
+![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/921c70f8-b530-4aaa-885b-2c1df35bd0f4)
+
+
+### 2 - The date the user became a member.
+
+You can estimate this, or use the actual date if you want. Just remember that the next time the user triggers first words, if it has been 30 days from the date you enter, they will be removed from all member groups. They will need to trigger a new member (sponsor) event or member milestone event if they want to be added back automatically.
+**Make sure to put the date format in `yyyy-MM-dd`
+
+![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/fef512e6-1e9b-4e50-a3f5-36ea249f1cc9)
+
+
+### 3 - The member level/tier you are assigning.
+
+This should be a number with the minimum accepted value of `0` and the maximum accepted value of `5`
+
+![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/4f9bde91-c0c3-450e-9f20-4404dc0fc452)
+
+
+After adding all the inputs, if there was anything wrong with the date or level you entered, a message will be sent telling you which imput did not work.
+
+To check that the user is now in the member group in Streamer.bot you can go back to the `Viewers` tab and see if they are now in the group:
+
+![image](https://github.com/Haunter56/Auto-Member-Group-Assignment-SB/assets/107263697/3e29c880-2853-4852-9a3e-a63d6d661b59)
+
 
 
 
