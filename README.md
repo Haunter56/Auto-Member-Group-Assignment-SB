@@ -11,7 +11,7 @@ With this you will be able to have members assigned automatically to groups to b
 
 Members get assigned to a group through these events:
 - New Member(Sponsor) Event
-- Member Mileston Event
+- Member Milestone Event
 - Gift Membership Received
 - Manual Command (for when a user becomes a member offline)
 
